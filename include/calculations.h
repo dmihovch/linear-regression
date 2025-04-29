@@ -18,6 +18,6 @@ double variance(double*,const int);
 double covariance(double*,double*, const int);
 const betas_t fit_linear_regression(double*, double*, const int);
 double predict(const betas_t, double);
-double square(double);
+double square(const double);
 
 #endif
