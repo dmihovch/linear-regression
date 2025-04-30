@@ -25,6 +25,14 @@ int main(int argc, char*argv[]){
     printf("beta 0: %0.9f\nbeta 1: %0.9f\n",b.b0,b.b1);
     printf("r^2: %0.9f\n",rsquared);
 
+    int x;
+    printf("enter x value to Predict: ");
+    scanf("%d",&x);
+    printf("\n");
+
+    double predicted = predict(b, x);
+    printf("x: %d y(pred): %0.9f\n",x,predicted);
+
     free(data->x_arr);
     free(data->y_arr);
     free(data);
