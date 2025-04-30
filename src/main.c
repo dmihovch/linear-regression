@@ -21,7 +21,9 @@ int main(int argc, char*argv[]){
     print_data(data);
 
     const betas_t b = fit_linear_regression(data->x_arr, data->y_arr, data->size);
+    const double rsquared = r_squared(data->x_arr,data->y_arr,b,data->size);
     printf("beta 0: %0.9f\nbeta 1: %0.9f\n",b.b0,b.b1);
+    printf("r^2: %0.9f\n",rsquared);
 
     free(data->x_arr);
     free(data->y_arr);

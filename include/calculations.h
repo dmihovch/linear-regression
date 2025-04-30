@@ -19,5 +19,8 @@ double covariance(double*,double*, const int);
 const betas_t fit_linear_regression(double*, double*, const int);
 double predict(const betas_t, double);
 double square(const double);
+double r_squared(double*,double*,const betas_t,const int);
+double total_sum_of_squares(double*,const int);
+double residual_sum_of_squares(double*,double*,const betas_t, const int);
 
 #endif
